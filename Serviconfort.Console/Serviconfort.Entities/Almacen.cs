@@ -8,24 +8,55 @@ namespace Serviconfort.Entities
 {
     public class Almacen
     {
-        private double _codAlmacen;
+        private double _idProducto;
 
-        public double CodAlmacen
+        public int codAlmacen { get; private set; }
+        public string modelo { get; private set; }
+        public string capacidad { get; private set; }
+        public string cantidad { get; private set; }
+        public string precioCompra { get; private set; }
+        public string precioVenta { get; private set; }
+        public string descuento { get; private set; }
+        
+        public double IdProducto
         {
             get
             {
-                return _codAlmacen;
+                return _idProducto;
             }
             set
             {
                 if (value > 0)
-                    _codAlmacen = value;
+                    _idProducto = value;
             }
         }
 
-        public Almacen (double codAlmacen)
+        public Almacen (double idProducto)
         {
-            CodAlmacen = codAlmacen;
+            IdProducto = idProducto;
         }
+
+        public Almacen(int codAlma)
+        {
+            codAlmacen = codAlma;
+        }
+
+        public Almacen(string mod)
+        {
+            modelo = mod;
+        }
+
+        public Almacen(string capa )
+        {
+            capacidad = capa;
+        }
+
+        public Almacen(string cant)
+        {
+            cantidad = cant;
+        }
+
     }
+
+    
 }

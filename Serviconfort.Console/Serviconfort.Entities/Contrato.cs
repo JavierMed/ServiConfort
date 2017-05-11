@@ -6,12 +6,56 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.Entities
 {
-    class Contrato
+    public class Contrato
     {
-        private string idCotizacion { get; set; }
-        public DateTime fechaInicioContra { get; set; }
-        public DateTime fechaCulminacionContra { get; set; }
-        public DateTime fechaGarantiaExten { get; set; }
-        public string idPago { get; set; }
+        public string idCotizacion { get; private set; }
+        public DateTime fechaInicioContra { get; private set; }
+        public DateTime fechaCulminacionContra { get; private set; }
+        public DateTime fechaGarantiaExtern { get; private set; }
+        public string idPago { get; private set; }
+
+        //llamando la clase FormaPago
+        public FormaPago FormaPago { get; set; }
+
+        //metodo de la clase FormaPago
+        public Contrato(FormaPago formapago)
+        {
+            FormaPago = formapago;
+        }
+
+        public Contrato()
+        {
+
+        }
+        //los demas metodos
+        public Contrato(string idcotiz)
+        {
+            idCotizacion = idcotiz;
+        }
+
+        public Contrato(DateTime fecIniContra)
+        {
+            fechaInicioContra = fecIniContra;
+        }
+
+        public  Contrato(DateTime fecCulmContra)
+        {
+            fechaCulminacionContra = fecCulmContra;
+        }
+
+        public Contrato(DateTime fecGarExt)
+        {
+            fechaGarantiaExtern = fecGarExt;
+        }
+
+
+        //metodos donde se operan
+        
+        public Contrato(string idpago)
+        {
+            idPago = idpago;
+        }
+
+
     }
 }

@@ -9,9 +9,9 @@ namespace Serviconfort.Entities
     public class Producto
     {
         private List<Almacen> _Almacen;
-        public Producto(int codAlmacen)
+        public Producto(int idProducto)
         {
-            _Almacen = new List<Almacen>(codAlmacen);
+            _Almacen = new List<Almacen>(idProducto);
         }
     }
 }

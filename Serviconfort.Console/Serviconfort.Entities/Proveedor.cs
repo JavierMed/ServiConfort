@@ -6,10 +6,32 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.Entities
 {
-    class Proveedor
+    public class Proveedor
     {
-        public string nombreProveedor { get; set; }
-        public string direccion { get; set; }
-        public int telefono { get; set; }
+        public string idProveedor { get; private set; }
+        public string nombreProveedor { get; private set; }
+        public string direccion { get; private set; }
+        public string telefono { get; private set; }
+        
+        public Proveedor(string idprov)
+        {
+            idProveedor = idprov;
+        }
+
+        public Proveedor(string nomprov)
+        {
+            nombreProveedor = nomprov;
+        }
+
+        public Proveedor(string dir)
+        {
+            direccion = dir;
+        }
+
+        public Proveedor(string tel)
+        {
+            telefono = tel;
+        }
     }
+    
 }

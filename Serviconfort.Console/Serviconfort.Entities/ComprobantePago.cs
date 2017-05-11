@@ -6,12 +6,43 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.Entities
 {
-    class ComprobantePago
+    public class ComprobantePago
     {
-        public string tipoComprobante { get; set; }
-        public int cantidad { get; set; }
-        public string descripcion { get; set; }
-        public double total { get; set; }
-        public DateTime fechaPago { get; set; }
+        public int codComprobante { get; private set; }
+        public string tipoComprobante { get; private set; }
+        public string cantidad { get; private set; }
+        public string descripcion { get; private set; }
+        public string total { get; private set; }
+        public DateTime fechaPago { get; private set; }
+
+        public ComprobantePago(int codComp)
+        {
+            codComprobante = codComp;
+        }
+
+        public ComprobantePago(string tipoComp)
+        {
+            tipoComprobante = tipoComp;
+        }
+
+        public ComprobantePago(string cant)
+        {
+            cantidad = cant;
+        }
+
+        public ComprobantePago(string descrip)
+        {
+            descripcion = descrip;
+        }
+
+        public ComprobantePago(string tot)
+        {
+            total = tot;
+        }
+
+        public ComprobantePago(DateTime fecPag)
+        {
+            fechaPago = fecPag;
+        }
     }
 }
