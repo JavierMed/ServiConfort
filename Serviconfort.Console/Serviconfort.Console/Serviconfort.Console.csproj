@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C85FE6A7-B4CA-477B-B722-545F0795D0EF}</ProjectGuid>
+    <ProjectGuid>{6D61EA98-E3AA-415E-A9F4-F80A4C551E2F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Serviconfort.Console</RootNamespace>
-    <AssemblyName>Serviconfort.Console</AssemblyName>
+    <RootNamespace>Serviconfort.console</RootNamespace>
+    <AssemblyName>Serviconfort.console</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,13 +50,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Serviconfort.Entities\Serviconfort.Entities.csproj">
-      <Project>{ebdcac1a-ac86-4094-bd21-8e567f594664}</Project>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Serviconfort.entities\Serviconfort.Entities.csproj">
+      <Project>{7cbe5255-af71-4478-93e8-4b59fe8be327}</Project>
       <Name>Serviconfort.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Serviconfort.Persistence\Serviconfort.Persistence.csproj">
-      <Project>{e3aeffb6-d789-4494-8d91-2db1a061baf8}</Project>
-      <Name>Serviconfort.Persistence</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

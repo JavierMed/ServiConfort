@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Serviconfort.Console")]
+[assembly: AssemblyTitle("Serviconfort.console")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Serviconfort.Console")]
+[assembly: AssemblyProduct("Serviconfort.console")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c85fe6a7-b4ca-477b-b722-545f0795d0ef")]
+[assembly: Guid("6d61ea98-e3aa-415e-a9f4-f80a4c551e2f")]
 
 // Version information for an assembly consists of the following four values:
 //
