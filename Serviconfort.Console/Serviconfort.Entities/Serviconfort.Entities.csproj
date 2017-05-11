@@ -40,12 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Almacen.cs" />
     <Compile Include="Cargo.cs" />
+    <Compile Include="ComprobantePago.cs" />
     <Compile Include="Contacto.cs" />
     <Compile Include="ContactoXPersona.cs" />
+    <Compile Include="Contrato.cs" />
     <Compile Include="Departamento.cs" />
     <Compile Include="Distrito.cs" />
     <Compile Include="Documento.cs" />
+    <Compile Include="FormaPago.cs" />
+    <Compile Include="Pedido.cs" />
+    <Compile Include="Producto.cs" />
+    <Compile Include="Proveedor.cs" />
     <Compile Include="Provincia.cs" />
     <Compile Include="Ubigeo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
