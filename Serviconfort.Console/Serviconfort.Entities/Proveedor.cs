@@ -13,12 +13,9 @@ namespace Serviconfort.entities
         public string direccion { get; private set; }
         public string telefono { get; private set; }
 
-        public Proveedor(string idprov,string nomprov,string dir,string tel)
+        public Proveedor()
         {
-            idProveedor = idprov;
-            nombreProveedor = nomprov;
-            direccion = dir;
-            telefono = tel;
+            
         }
     }
 }

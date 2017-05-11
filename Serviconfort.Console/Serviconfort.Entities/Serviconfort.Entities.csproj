@@ -47,7 +47,6 @@
     <Compile Include="CliNatural.cs" />
     <Compile Include="ComprobantePago.cs" />
     <Compile Include="Contacto.cs" />
-    <Compile Include="ContactoXPersona.cs" />
     <Compile Include="Contrato.cs" />
     <Compile Include="Cotizaciones.cs" />
     <Compile Include="Departamento.cs" />

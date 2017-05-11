@@ -11,10 +11,9 @@ namespace Serviconfort.entities
         public int idDistrito { get; set; }
         public string nombreDistrito { get; set; }
 
-        public Distrito(int idDis, string nomDis)
+        public Distrito()
         {
-            idDistrito = idDis;
-            nombreDistrito = nomDis;
+            
         }
 
     }

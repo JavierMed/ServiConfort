@@ -11,10 +11,9 @@ namespace Serviconfort.entities
         public int idProvincia { get; set; }
         public string nombreProvincia { get; set; }
 
-        public Provincia(int idPro, string nomPro)
+        public Provincia()
         {
-            idProvincia = idPro;
-            nombreProvincia = nomPro;
+            
         }
 
     }

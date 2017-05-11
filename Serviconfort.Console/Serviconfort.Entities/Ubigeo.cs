@@ -22,16 +22,16 @@ namespace Serviconfort.entities
         //public Departamento Departamento { get { return nombreDepartamento; } }
         public void ingresarDepartamento(int id,string nom)
         {
-            Departamento.Add(new Departamento(id,nom));
+            Departamento.Add(new Departamento());
 
         }
         public void ingresarDistrito(int id, string nom)
         {
-            Distrito.Add(new Distrito(id, nom));
+            Distrito.Add(new Distrito());
         }
         public void ingresarProvincia(int id,string nom)
         {
-            Provincia.Add(new Provincia(id, nom));
+            Provincia.Add(new Provincia());
         }
     }
 }

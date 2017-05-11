@@ -15,14 +15,11 @@ namespace Serviconfort.entities
         public double total { get; private set; }
         public DateTime fechaPago { get; private set; }
 
-        public ComprobantePago(int codComp,string tipoComp,int cant,string descr,double total,DateTime fechaPago)
+        public List<Cliente> Clientes;
+
+        public ComprobantePago()
         {
-            codComprobante = codComp;
-            tipoComprobante = tipoComp;
-            cantidad = cant;
-            descripcion = descr;
-            this.total = total;
-            this.fechaPago = fechaPago;
+            Clientes = new List<Cliente>();
         }
     }
 }

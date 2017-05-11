@@ -8,10 +8,12 @@ namespace Serviconfort.entities
 {
     class Producto
     {
+        public int idProducto { get; set; }
+        public string nombreProducto { get; set; }
         private List<Almacen> _Almacen;
-        public Producto(int idProducto)
+        public Producto()
         {
-            _Almacen = new List<Almacen>(idProducto);
+            _Almacen = new List<Almacen>();
         }
     }
 }

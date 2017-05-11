@@ -11,10 +11,9 @@ namespace Serviconfort.entities
         public int idCargo { get; set; }
         public string nombreCargo { get; set; }
 
-        public Cargo(int idCargo,string nomCargo)
+        public Cargo()
         {
-            this.idCargo = idCargo;
-            nombreCargo = nomCargo;
+            
         }
 
     }

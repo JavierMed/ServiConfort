@@ -11,10 +11,9 @@ namespace Serviconfort.entities
         public int idDocumento { get; set; }
         public string tipoDocumento { get; set; }
 
-        public Documento(int idDoc,string tipoDoc)
+        public Documento()
         {
-            idDocumento = idDoc;
-            tipoDocumento = tipoDoc;
+            
         }
 
     }

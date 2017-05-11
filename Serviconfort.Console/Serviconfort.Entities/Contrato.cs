@@ -8,27 +8,19 @@ namespace Serviconfort.entities
 {
     class Contrato
     {
-        public string idCotizacion { get; private set; }
+        public Cotizaciones Cotizacion;
         public DateTime fechaInicioContra { get; private set; }
         public DateTime fechaCulminacionContra { get; private set; }
         public DateTime fechaGarantiaExtern { get; private set; }
-        public string idPago { get; private set; }
 
         //llamando la clase FormaPago
-        public FormaPago FormaPago { get; set; }
+        public FormaPago FormaPago;
 
         //metodo de la clase FormaPago
-        public Contrato(FormaPago formapago)
+        public Contrato()
         {
-            FormaPago = formapago;
-        }
-        //los demas metodos
-        public Contrato(string idcoti,DateTime fechaIni,DateTime fechaCulmin,DateTime fechaGaran)
-        {
-            idCotizacion = idcoti;
-            fechaInicioContra = fechaIni;
-            fechaCulminacionContra = fechaCulmin;
-            fechaGarantiaExtern = fechaGaran;
+            Cotizacion = new Cotizaciones();
+            FormaPago = new FormaPago();
         }
     }
 }

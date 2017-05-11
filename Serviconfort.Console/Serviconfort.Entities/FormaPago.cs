@@ -11,10 +11,9 @@ namespace Serviconfort.entities
         public int idPago { get; private set; }
         public string tipoPago { get; private set; }
 
-        public FormaPago(int idpago,string tipoPago)
+        public FormaPago()
         {
-            idPago = idpago;
-            this.tipoPago = tipoPago;
+            
         }
     }
 }

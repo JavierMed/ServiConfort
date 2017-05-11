@@ -9,20 +9,20 @@ namespace Serviconfort.entities
     class Pedido
     {
         private int codCompra { get; set; }
-        public string idProducto { get; set; }
-        public string idProvedor { get; set; }
+        public Producto Producto { get; set; }
+        public Proveedor Proveedor;
         public int cantidad { get; set; }
         private int precioCompra { get; set; }
         private double descuento { get; set; }
-        public string idPago { get; set; }
-        public int codComprobante { get; set; }
+        public FormaPago FormaPago;
+        public ComprobantePago Comprobante;
 
-        public Pedido(int codcompra,int cant,int preCompra,double desc)
+        public Pedido()
         {
-            codCompra = codcompra;
-            cantidad = cant;
-            precioCompra = preCompra;
-            descuento = desc;
+            Producto = new Producto();
+            Proveedor = new Proveedor();
+            FormaPago = new FormaPago();
+            Comprobante = new ComprobantePago();
         }
     }
 }

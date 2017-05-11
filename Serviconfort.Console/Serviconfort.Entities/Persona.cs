@@ -14,11 +14,13 @@ namespace Serviconfort.entities
         public int IdTipocontac { get; set; }
         public int IdDocumento { get; set; }
         public int IdDistrito { get; set; }
-        public int IdUbigeo { get; set; }
+        public Ubigeo Ubigeo;
+        public ICollection<Contacto> Contactos { get; set; }
 
         public Persona()
         {
-
+            Ubigeo = new Ubigeo();
+            Contactos = new HashSet<Contacto>();
         }
     }
 }

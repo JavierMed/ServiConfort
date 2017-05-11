@@ -14,11 +14,5 @@ namespace Serviconfort.entities
         {
 
         }
-        public Departamento(int idDep, string nomDep)
-        {
-            idDepartamento = idDep;
-            nombreDepartamento = nomDep;
-        }
-
     }
 }

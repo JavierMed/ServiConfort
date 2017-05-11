@@ -17,29 +17,11 @@ namespace Serviconfort.entities
         public double precioCompra { get; private set; }
         public double precioVenta { get; private set; }
         public double descuento { get; private set; }
-        public double IdProducto
-        {
-            get
-            {
-                return _idProducto;
-            }
-            set
-            {
-                if (value > 0)
-                    _idProducto = value;
-            }
-        }
+        public Producto Producto;
 
-        public Almacen(int codAlmacen,string modelo,string capac,int cant,double preCom,double preVen,double desc,double idProducto)
+        public Almacen()
         {
-            this.codAlmacen = codAlmacen;
-            this.modelo = modelo;
-            capacidad = capac;
-            cantidad = cant;
-            precioCompra = preCom;
-            precioVenta = preVen;
-            descuento = desc;
-            IdProducto = idProducto;
+            Producto = new Producto();
         }
     }
 }
