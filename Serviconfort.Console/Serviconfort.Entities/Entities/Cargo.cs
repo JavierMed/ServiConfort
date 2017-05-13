@@ -13,7 +13,6 @@ namespace Serviconfort.entities
 
         public Cargo()
         {
-            
         }
 
     }

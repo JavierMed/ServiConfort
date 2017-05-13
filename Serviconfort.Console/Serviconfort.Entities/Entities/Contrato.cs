@@ -8,10 +8,15 @@ namespace Serviconfort.entities
 {
     public class Contrato
     {
+        public int CodContrato { get; set; }
+        public int idCotizacion { get; set; }
         public Cotizaciones Cotizacion;
-        public DateTime fechaInicioContra { get; private set; }
-        public DateTime fechaCulminacionContra { get; private set; }
-        public DateTime fechaGarantiaExtern { get; private set; }
+        public DateTime fechaInicioContra { get; set; }
+        public DateTime fechaCulminacionContra { get; set; }
+        public DateTime fechaGarantiaExtern { get; set; }
+        public int idPago { get; set; }
+        public int codAlmacen { get; set; }
+        public Almacen Almacen { get; set; }
 
         //llamando la clase FormaPago
         public FormaPago FormaPago;

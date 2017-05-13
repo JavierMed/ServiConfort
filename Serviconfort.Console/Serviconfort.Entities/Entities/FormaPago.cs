@@ -8,8 +8,8 @@ namespace Serviconfort.entities
 {
     public class FormaPago
     {
-        public int idPago { get; private set; }
-        public string tipoPago { get; private set; }
+        public int idPago { get; set; }
+        public string tipoPago { get; set; }
 
         public FormaPago()
         {

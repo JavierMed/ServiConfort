@@ -10,20 +10,6 @@ namespace Serviconfort.entities
     {
         public DateTime FechaNacimiento { get; set; }
         public int Edad { get; set; }
-
-        public void Identificarse()
-        {
-            Console.WriteLine("Soy un cliente Natural, " + "mi codigo es " + this.CodCli);
-        }
-
-        public CliNatural()
-        {
-
-        }
-
-        public CliNatural(int codCli) : base(codCli)
-        {
-
-        }
+        
     }
 }

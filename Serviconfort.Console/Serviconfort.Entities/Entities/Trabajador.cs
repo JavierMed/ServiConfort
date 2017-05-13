@@ -12,12 +12,14 @@ namespace Serviconfort.entities
         public double sueldo { get; set; }
         public double bonos { get; set; }
         public int IdCargo { get; set; }
-
-        public List<Servicio> TipoServicio { get; set; }
+        public int idServicio { get; set; }
+        public Cargo Cargo { get; set; }
+        public Servicio TipoServicio { get; set; }
 
         public Trabajador()
         {
-            TipoServicio = new List<Servicio>();
+            Cargo = new Cargo();
+            TipoServicio = new Servicio();
         }
     }
 }

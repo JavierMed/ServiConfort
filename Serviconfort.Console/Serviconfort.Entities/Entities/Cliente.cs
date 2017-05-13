@@ -9,17 +9,6 @@ namespace Serviconfort.entities
     public class Cliente
     {
         public int CodCli { get; set; }
-
-        public ICollection<ComprobantePago> Comprobantes { get; set; }
-
-        public Cliente()
-        {
-            Comprobantes = new HashSet<ComprobantePago>();
-        }
-
-        public Cliente(int codCli)
-        {
-            CodCli = codCli;
-        }
+       
     }
 }

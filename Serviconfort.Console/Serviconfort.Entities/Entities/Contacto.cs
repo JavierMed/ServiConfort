@@ -8,19 +8,14 @@ namespace Serviconfort.entities
 {
     public class Contacto
     {
-        public int TipoContacto { get; set; }
+        public int idTipoContacto { get; set; }
         public string contacto { get; set; }
-
-        public List<Persona> Personas { get; set; }
+        public int idPersona { get; set; }
+        public Persona Persona { get; set; }
 
         public Contacto()
         {
-            Personas = new List<Persona>();
-        }
-        public Contacto(int TipoCon,string conta)
-        {
-            TipoContacto = TipoCon;
-            contacto = conta;
+            Persona = new Persona();
         }
     }
 }

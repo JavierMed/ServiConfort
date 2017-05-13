@@ -1,4 +1,5 @@
 ﻿using Serviconfort.entities;
+using Serviconfort.Persistence.EntityTypeConfiguration;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -32,8 +33,13 @@ namespace Serviconfort.Persistence
         public DbSet<Trabajador> Trabajador { get; set; }
         public DbSet<Ubigeo> Ubigeo { get; set; }
 
-        
-        
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //modelBuilder.Configurations.Add(new ContratoConfiguration());
+
+            base.OnModelCreating(modelBuilder);
+        }
+
 
     }
 }

@@ -11,16 +11,19 @@ namespace Serviconfort.entities
         public int CodPersona { get; set; }
         public string nombres { get; set; }
         public string direccion { get; set; }
-        public int IdTipocontac { get; set; }
-        public int IdDocumento { get; set; }
-        public int IdDistrito { get; set; }
-        public Ubigeo Ubigeo;
-        public ICollection<Contacto> Contactos { get; set; }
+        public int idTipocontac { get; set; }
+        public int idDocumento { get; set; }
+        public int idUbigeo { get; set; }
+        public string numDocumento { get; set; }
+        public Ubigeo Ubigeo { get; set; }
+        public List<Contacto> Contactos { get; set; }
+        public Documento Documento { get; set; }
 
         public Persona()
         {
             Ubigeo = new Ubigeo();
-            Contactos = new HashSet<Contacto>();
+            Contactos = new List<Contacto>();
+            Documento = new Documento();
         }
     }
 }

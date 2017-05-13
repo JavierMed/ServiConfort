@@ -49,6 +49,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityTypeConfiguration\AlmacenConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\CargoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\CliEmpresaConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ClienteConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\CliNaturalConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ComprobantePagoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ContactoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ContratoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\CotizacionesConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\DepartamentoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\DistritoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\DocumentoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\FormaPagoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\PedidoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\PersonaConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ProductoConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ProveedorConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ProvinciaConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ServicioConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\TrabajadorConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\UbigeoConfiguration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repositories\AlmacenRepository.cs" />
     <Compile Include="Repositories\CargoRepository.cs" />
@@ -82,7 +103,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

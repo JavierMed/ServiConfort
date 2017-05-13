@@ -8,10 +8,10 @@ namespace Serviconfort.entities
 {
     public class Proveedor
     {
-        public string idProveedor { get; private set; }
-        public string nombreProveedor { get; private set; }
-        public string direccion { get; private set; }
-        public string telefono { get; private set; }
+        public string idProveedor { get; set; }
+        public string nombreProveedor { get; set; }
+        public string direccion { get; set; }
+        public string telefono { get; set; }
 
         public Proveedor()
         {

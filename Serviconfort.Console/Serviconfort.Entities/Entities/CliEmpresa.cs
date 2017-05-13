@@ -11,19 +11,5 @@ namespace Serviconfort.entities
         public string RazonSocial { get; set; }
         public string PersonaContacto { get; set; }
 
-        public void Identificarse()
-        {
-            Console.WriteLine("Soy un Cliente Empresa, " + "mi código es " + this.CodCli);
-        }
-
-        public CliEmpresa()
-        {
-
-        }
-
-        public CliEmpresa(int codCli) : base(codCli)
-        {
-
-        }
     }
 }

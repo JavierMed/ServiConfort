@@ -8,6 +8,10 @@ namespace Serviconfort.entities
 {
     public class Ubigeo
     {
+        public int idUbigeo { get; set; }
+        public int idDepartamento { get; set; }
+        public int idProvincia { get; set; }
+        public int idDistrito { get; set; }
         List<Departamento> Departamento;
         List<Distrito> Distrito;
         List<Provincia> Provincia;

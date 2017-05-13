@@ -10,10 +10,10 @@ namespace Serviconfort.entities
     {
         public int idProducto { get; set; }
         public string nombreProducto { get; set; }
-        private List<Almacen> _Almacen;
+        public Almacen Almacen;
         public Producto()
         {
-            _Almacen = new List<Almacen>();
+          Almacen = new Almacen();
         }
     }
 }
