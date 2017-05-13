@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class Cliente
+    public class Cliente
     {
         public int CodCli { get; set; }
 

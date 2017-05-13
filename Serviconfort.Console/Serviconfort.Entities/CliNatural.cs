@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class CliNatural:Cliente
+    public class CliNatural:Cliente
     {
         public DateTime FechaNacimiento { get; set; }
         public int Edad { get; set; }

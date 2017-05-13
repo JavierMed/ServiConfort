@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class FormaPago
+    public class FormaPago
     {
         public int idPago { get; private set; }
         public string tipoPago { get; private set; }

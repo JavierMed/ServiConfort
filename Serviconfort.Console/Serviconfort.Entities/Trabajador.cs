@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class Trabajador
+    public class Trabajador
     {
         public int CodTrabajador { get; set; }
         public double sueldo { get; set; }

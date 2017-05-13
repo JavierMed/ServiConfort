@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class Provincia
+    public class Provincia
     {
         public int idProvincia { get; set; }
         public string nombreProvincia { get; set; }

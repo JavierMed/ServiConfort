@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class ComprobantePago
+    public class ComprobantePago
     {
         public int codComprobante { get; private set; }
         public string tipoComprobante { get; private set; }

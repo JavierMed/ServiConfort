@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class Proveedor
+    public class Proveedor
     {
         public string idProveedor { get; private set; }
         public string nombreProveedor { get; private set; }

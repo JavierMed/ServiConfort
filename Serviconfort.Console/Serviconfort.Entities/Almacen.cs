@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class Almacen
+    public class Almacen
     {
-        private double _idProducto;
-
+        
         public int codAlmacen { get; private set; }
         public string modelo { get; private set; }
         public string capacidad { get; private set; }

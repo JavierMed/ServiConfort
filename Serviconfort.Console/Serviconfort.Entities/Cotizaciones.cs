@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class Cotizaciones
+    public class Cotizaciones
     {
         public int IdCotizaciones { get; set; }
         public DateTime FechaVisita { get; set; }

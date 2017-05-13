@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serviconfort.entities
 {
-    class Pedido
+    public class Pedido
     {
         private int codCompra { get; set; }
         public Producto Producto { get; set; }
