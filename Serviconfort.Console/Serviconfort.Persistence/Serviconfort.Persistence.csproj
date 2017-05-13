@@ -49,6 +49,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Repositories\AlmacenRepository.cs" />
+    <Compile Include="Repositories\CargoRepository.cs" />
+    <Compile Include="Repositories\CliEmpresaRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository.cs" />
+    <Compile Include="Repositories\CliNaturalRepository.cs" />
+    <Compile Include="Repositories\ComprobantePagoRepository.cs" />
+    <Compile Include="Repositories\ContactoRepository.cs" />
+    <Compile Include="Repositories\ContratoRepository.cs" />
+    <Compile Include="Repositories\CotizacionesRepository.cs" />
+    <Compile Include="Repositories\DepartamentoRepository.cs" />
+    <Compile Include="Repositories\DistritoRepository.cs" />
+    <Compile Include="Repositories\DocumentoRepository.cs" />
+    <Compile Include="Repositories\FormaPagoRepository.cs" />
+    <Compile Include="Repositories\PedidoRepository.cs" />
+    <Compile Include="Repositories\PersonaRepository.cs" />
+    <Compile Include="Repositories\ProductoRepository.cs" />
+    <Compile Include="Repositories\ProveedorRepository.cs" />
+    <Compile Include="Repositories\ProvinciaRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\ServicioRepository.cs" />
+    <Compile Include="Repositories\TrabajadorRepository.cs" />
+    <Compile Include="Repositories\UbigeoRepository.cs" />
     <Compile Include="ServiconfortDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
