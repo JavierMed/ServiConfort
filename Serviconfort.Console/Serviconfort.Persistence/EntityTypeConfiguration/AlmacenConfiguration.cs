@@ -20,7 +20,7 @@ namespace Serviconfort.Persistence.EntityTypeConfiguration
             Property(c => c.precioCompra).HasColumnType("double");
             Property(c => c.precioVenta).HasColumnType("double");
             Property(c => c.descuento).HasColumnType("double");
-            //HasRequired(c => c.Producto).WithMany(c => c.Almacen).HasForeignKey(c=>c.idProducto);
+            //HasRequired(c => c.Producto).WithMany(g => g.Almacen).HasForeignKey(c=>c.idProducto);
         }
     }
 }

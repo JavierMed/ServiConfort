@@ -10,7 +10,10 @@ namespace Serviconfort.entities
     {
         public int idProducto { get; set; }
         public string nombreProducto { get; set; }
-        public Almacen Almacen;
+
+        public Almacen Almacen { get; set; }
+        public Pedido Pedido { get; set; }
+
         public Producto()
         {
           Almacen = new Almacen();
